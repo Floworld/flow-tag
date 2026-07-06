@@ -1,26 +1,26 @@
 <svg viewBox="0 0 1200 340" width="1200" height="340" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'DejaVu Sans', sans-serif" role="img">
   <title>flow-tag — the open NFC tag that ships with Flow</title>
-  <desc>Dark banner with an orange app-icon tile showing the white scan-frame face logo, next to the flow-tag wordmark, tagline and flowworld.xyz link.</desc>
+  <desc>Dark banner with an orange tile showing the white scan-frame face logo, next to the flow-tag wordmark, tagline and flowworld.xyz link.</desc>
 
   <!-- card -->
   <rect x="8" y="8" width="1184" height="324" rx="22" fill="#1A1A1A" stroke="#333333"/>
 
   <!-- logo tile -->
-  <rect x="80" y="80" width="180" height="180" rx="34" fill="#FF8C00"/>
+  <rect x="80" y="80" width="180" height="180" rx="30" fill="#FF8C00"/>
   <g transform="translate(80,80) scale(0.6)" fill="#ffffff">
-    <rect x="62" y="62" width="54" height="30"/>
-    <rect x="62" y="62" width="30" height="54"/>
-    <rect x="184" y="62" width="54" height="30"/>
-    <rect x="208" y="62" width="30" height="54"/>
-    <rect x="62" y="208" width="54" height="30"/>
-    <rect x="62" y="184" width="30" height="54"/>
-    <rect x="184" y="208" width="54" height="30"/>
-    <rect x="208" y="184" width="30" height="54"/>
-    <rect x="114" y="90" width="26" height="68"/>
-    <rect x="160" y="90" width="26" height="68"/>
-    <rect x="110" y="174" width="26" height="26"/>
-    <rect x="164" y="174" width="26" height="26"/>
-    <rect x="128" y="200" width="44" height="22"/>
+    <rect x="42" y="42" width="48" height="24"/>
+    <rect x="42" y="66" width="24" height="24"/>
+    <rect x="210" y="42" width="48" height="24"/>
+    <rect x="234" y="66" width="24" height="24"/>
+    <rect x="90" y="90" width="24" height="48"/>
+    <rect x="186" y="90" width="24" height="48"/>
+    <rect x="90" y="186" width="24" height="24"/>
+    <rect x="186" y="186" width="24" height="24"/>
+    <rect x="114" y="210" width="72" height="24"/>
+    <rect x="42" y="210" width="24" height="48"/>
+    <rect x="66" y="234" width="24" height="24"/>
+    <rect x="234" y="210" width="24" height="48"/>
+    <rect x="210" y="234" width="24" height="24"/>
   </g>
 
   <!-- wordmark + copy -->
