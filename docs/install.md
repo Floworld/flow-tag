@@ -41,7 +41,7 @@ sudo apt install libnfc-bin libnfc-dev
 nfc-list
 
 # write with our helper (see tools/write-tag.py)
-python3 tools/write-tag.py --url "https://flowworld.xyz"
+python3 tools/write-tag.py --url "https://floworld.xyz"
 ```
 
 Full script + flags: [../tools/write-tag.py](../tools/write-tag.py).
@@ -56,7 +56,7 @@ pip install nfcpy ndeflib
 python3 - <<'PY'
 import nfc, ndef
 def on_connect(tag):
-    tag.ndef.records = [ndef.UriRecord("https://flowworld.xyz")]
+    tag.ndef.records = [ndef.UriRecord("https://floworld.xyz")]
     print("written:", tag.ndef.records)
     return True
 nfc.ContactlessFrontend('usb').connect(rdwr={'on-connect': on_connect})

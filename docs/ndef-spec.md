@@ -47,9 +47,9 @@ MB  ME  CF  SR  IL  └─TNF─┘
 |-----|----------------------|---------------------------------|
 | 0x1 | NFC Well-Known Type  | `U` (URI), `T` (Text)           |
 | 0x2 | MIME media type      | `text/vcard`                    |
-| 0x4 | External type        | `flowworld.xyz:macro`           |
+| 0x4 | External type        | `floworld.xyz:macro`           |
 
-## Worked example: a URI record for https://flowworld.xyz
+## Worked example: a URI record for https://floworld.xyz
 
 Well-Known URI records shorten common prefixes with a one-byte code, so you don't waste memory on `https://`.
 
@@ -59,14 +59,14 @@ Prefix table (partial):
 0x03 http://   0x04 https://      0x05 tel:  ...
 ```
 
-`https://` is `0x04`, so we store `0x04` + `flowworld.xyz`.
+`https://` is `0x04`, so we store `0x04` + `floworld.xyz`.
 
 ```
-D1 01 0E 55 04 66 6C 6F 77 77 6F 72 6C 64 2E 78 79 7A
-│  │  │  │  │  └────────────── "flowworld.xyz" (ASCII) ──────────┘
+D1 01 0D 55 04 66 6C 6F 77 6F 72 6C 64 2E 78 79 7A
+│  │  │  │  │  └──────────── "floworld.xyz" (ASCII) ──────────┘
 │  │  │  │  └─ 0x04 = "https://" prefix
 │  │  │  └─ 0x55 = 'U', the URI Well-Known type
-│  │  └─ payload length = 0x0E = 14 bytes (1 prefix + 13 chars)
+│  │  └─ payload length = 0x0D = 13 bytes (1 prefix + 12 chars)
 │  └─ type length = 0x01
 └─ header: MB=1 ME=1 SR=1 TNF=1  → 0xD1
 ```
@@ -74,10 +74,10 @@ D1 01 0E 55 04 66 6C 6F 77 77 6F 72 6C 64 2E 78 79 7A
 Wrapped in the TLV container, the full memory blob is:
 
 ```
-03 11 D1 01 0E 55 04 66 6C 6F 77 77 6F 72 6C 64 2E 78 79 7A FE
+03 11 D1 01 0D 55 04 66 6C 6F 77 6F 72 6C 64 2E 78 79 7A FE
 ```
 
-That's a complete, valid tag. 21 bytes. Fits any NTAG variant with room to spare.
+That's a complete, valid tag. 20 bytes. Fits any NTAG variant with room to spare.
 
 ## Text record shape (TNF 0x1, type `T`)
 
@@ -92,7 +92,7 @@ e.g. 0x02 "en" "hello"  →  02 65 6E 68 65 6C 6C 6F
 This is the door for Flow triggers and anything bespoke:
 
 ```
-TNF = 0x4, Type = "flowworld.xyz:macro", Payload = your bytes
+TNF = 0x4, Type = "floworld.xyz:macro", Payload = your bytes
 ```
 
 The OS won't auto-handle it — that's the point. Flow (or your own handler) claims the type and decides what it means. See [../examples/flow-macro.md](../examples/flow-macro.md).

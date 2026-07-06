@@ -46,10 +46,10 @@ NTAG215/216 support a 32-bit password (PWD/PACK) that gates writes but still all
 
 ## Reset to the shipped default
 
-Want the Kastanienhof demo back? Re-write it from source:
+Want the shipped default back? Re-write it from source:
 
 - Human-readable definition: [`../payloads/default.json`](../payloads/default.json)
-- Raw NDEF file: [`../examples/kastanienhof.ndef`](../examples/kastanienhof.ndef)
+- Raw NDEF file: [`../examples/default.ndef`](../examples/default.ndef)
 - Or just: write a URI record pointing at the default URL listed in `default.json`.
 
 ## Going deeper

@@ -30,7 +30,7 @@ Byte-level detail lives in [ndef-spec.md](ndef-spec.md).
 
 Because the format is open and the phone does the interpreting, **you never have to ask us for permission.** You write a new NDEF message onto the chip and every NFC device on earth already knows how to read it. There's no flow-tag runtime, no firmware, no API key. The "software" is a standard your phone shipped with.
 
-The default we flash (the Kastanienhof demo) is just one NDEF URL record. Overwriting it is writing a different record into the same memory. Nothing sacred, nothing protected.
+The default we flash is just one NDEF URL record (it points at floworld.xyz). Overwriting it is writing a different record into the same memory. Nothing sacred, nothing protected.
 
 ## The one gotcha: capacity
 
@@ -46,4 +46,4 @@ If a write fails, you probably overflowed. Shorten the payload or use a link sho
 
 ## Where Flow comes in
 
-A phone reads the tag and acts on the record itself. **Flow** can go further: point the tag at a custom scheme or a small local endpoint and a tap becomes a trigger for a Flow macro — launch an app, run a script, flip your lights, start a timer. The tag is dumb on purpose; Flow is the brain that makes a tap mean something. See [../examples/flow-macro.md](../examples/flow-macro.md) and [flowworld.xyz](https://flowworld.xyz).
+A phone reads the tag and acts on the record itself. **Flow** can go further: point the tag at a custom scheme or a small local endpoint and a tap becomes a trigger for a Flow macro — launch an app, run a script, flip your lights, start a timer. The tag is dumb on purpose; Flow is the brain that makes a tap mean something. See [../examples/flow-macro.md](../examples/flow-macro.md) and [floworld.xyz](https://floworld.xyz).
