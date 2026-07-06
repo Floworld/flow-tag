@@ -1,0 +1,17 @@
+{
+  "$comment": "Human-readable source of truth for what the flow-tag ships with. This is the DEFAULT, not a lock. Rewrite freely; re-flash from here to reset.",
+  "name": "flow-tag default payload",
+  "version": "1.0.0",
+  "chip": "NTAG213 / 215 / 216",
+  "locked": false,
+  "records": [
+    {
+      "type": "uri",
+      "tnf": "well-known",
+      "uri": "https://flowworld.xyz/tag/kastanienhof",
+      "note": "The Kastanienhof ratings demo. Preloaded so the tag does something out of the box."
+    }
+  ],
+  "reset_instructions": "Write a single URI record pointing at the uri above, or run: python3 tools/write-tag.py --url \"https://flowworld.xyz/tag/kastanienhof\"",
+  "learn_more": "https://flowworld.xyz"
+}
