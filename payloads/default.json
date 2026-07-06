@@ -8,10 +8,10 @@
     {
       "type": "uri",
       "tnf": "well-known",
-      "uri": "https://flowworld.xyz/tag/kastanienhof",
-      "note": "The Kastanienhof ratings demo. Preloaded so the tag does something out of the box."
+      "uri": "https://floworld.xyz",
+      "note": "The shipped demo link. Preloaded so the tag does something out of the box."
     }
   ],
-  "reset_instructions": "Write a single URI record pointing at the uri above, or run: python3 tools/write-tag.py --url \"https://flowworld.xyz/tag/kastanienhof\"",
-  "learn_more": "https://flowworld.xyz"
+  "reset_instructions": "Write a single URI record pointing at the uri above, or run: python3 tools/write-tag.py --url \"https://floworld.xyz\"",
+  "learn_more": "https://floworld.xyz"
 }
