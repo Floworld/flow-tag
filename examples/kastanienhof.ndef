@@ -1,0 +1,24 @@
+# The shipped default, as a raw NDEF file.
+#
+# This is exactly what your flow-tag arrives flashed with: a single
+# Well-Known URI record. It is NOT locked. Overwrite it whenever you like;
+# re-flash it from here if you ever want the demo back.
+#
+# Payload URL: https://flowworld.xyz/tag/kastanienhof
+#
+# --- Hex dump (TLV-wrapped, ready to write to user memory page 4+) ---
+# 03 26 D1 01 22 55 04 66 6C 6F 77 77 6F 72 6C 64 2E 78 79 7A 2F 74
+# 61 67 2F 6B 61 73 74 61 6E 69 65 6E 68 6F 66 FE
+#
+# Breakdown:
+#   03 26              TLV: NDEF message, 0x26 = 38 bytes
+#   D1                 record header  MB=1 ME=1 SR=1 TNF=1 (Well-Known)
+#   01                 type length = 1
+#   22                 payload length = 34
+#   55                 type 'U' (URI)
+#   04                 URI prefix 0x04 = "https://"
+#   66 6C 6F 77 ...    "flowworld.xyz/tag/kastanienhof" (ASCII)
+#   FE                 TLV terminator
+#
+# Reproduce with tools/write-tag.py:
+#   python3 tools/write-tag.py --url "https://flowworld.xyz/tag/kastanienhof"
