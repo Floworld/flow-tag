@@ -1,5 +1,7 @@
 <!-- flow-tag -->
-<h1 align="center">flow-tag</h1>
+<p align="center">
+  <a href="https://flowworld.xyz"><img src="assets/banner.png" alt="flow-tag — the open NFC tag that ships with Flow" width="820"></a>
+</p>
 
 <p align="center">
   <strong>A free, open-source NFC tag that ships in the box with <a href="https://flowworld.xyz">Flow</a>.</strong><br>
@@ -7,11 +9,7 @@
 </p>
 
 <p align="center">
-  <code>#FF8C00</code> on <code>#1A1A1A</code> &nbsp;·&nbsp; NTAG21x &nbsp;·&nbsp; NDEF &nbsp;·&nbsp; MIT
-</p>
-
-<p align="center">
-  <a href="https://flowworld.xyz"><strong>→ flowworld.xyz</strong></a>
+  <code>NTAG21x</code> &nbsp;·&nbsp; <code>NDEF</code> &nbsp;·&nbsp; <code>MIT</code> &nbsp;·&nbsp; <a href="https://flowworld.xyz"><strong>flowworld.xyz →</strong></a>
 </p>
 
 ---
@@ -79,6 +77,7 @@ Ideas people have already done with theirs: instant Wi-Fi handoff for guests, a 
 flow-tag/
 ├── README.md              ← you are here
 ├── LICENSE                ← MIT
+├── assets/                ← banner + logo (SVG source, editable — yes, even the art is open)
 ├── docs/
 │   ├── how-it-works.md    ← NFC + NDEF in plain English
 │   ├── install.md         ← writer setup for every platform
