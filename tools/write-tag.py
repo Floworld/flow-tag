@@ -11,7 +11,7 @@ Dependencies:
 
 Examples:
     # open a URL on tap
-    python3 write-tag.py --url "https://flowworld.xyz"
+    python3 write-tag.py --url "https://floworld.xyz"
 
     # plain text
     python3 write-tag.py --text "hack the planet"
@@ -19,7 +19,7 @@ Examples:
     # trigger a Flow macro via custom scheme
     python3 write-tag.py --url "flow://macro/deep-work"
 
-    # reset to the shipped Kastanienhof default
+    # reset to the shipped default
     python3 write-tag.py --reset
 
     # read what's currently on the tag
@@ -31,7 +31,7 @@ Tested with a €8 PN532 USB reader. See ../docs/install.md for setup.
 import argparse
 import sys
 
-DEFAULT_URL = "https://flowworld.xyz/tag/kastanienhof"
+DEFAULT_URL = "https://floworld.xyz"
 
 try:
     import nfc
@@ -55,7 +55,7 @@ def main():
     g = p.add_mutually_exclusive_group(required=True)
     g.add_argument("--url", help="write a URI record (http, https, flow://, tel:, mailto:, ...)")
     g.add_argument("--text", help="write a plain text record")
-    g.add_argument("--reset", action="store_true", help="restore the shipped Kastanienhof default")
+    g.add_argument("--reset", action="store_true", help="restore the shipped default")
     g.add_argument("--read", action="store_true", help="dump the tag's current records and exit")
     p.add_argument("--device", default="usb", help="nfcpy device path (default: usb)")
     args = p.parse_args()
