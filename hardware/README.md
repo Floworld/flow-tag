@@ -45,7 +45,7 @@ Softer alternative: the **password (PWD + PACK)** and **AUTH0** config gate *wri
 
 - Search **"NTAG215 NFC sticker"** on any electronics marketplace — €0.30–1.00 each in packs.
 - Want the round 25 mm white sticker like the one in your box? That's a bog-standard **NTAG215 25mm wet-inlay**.
-- Or just [buy another Flow](https://flowworld.xyz) — one ships free in every box.
+- Or just [buy another Flow](https://floworld.xyz) — one ships free in every box.
 
 ## Datasheets (authoritative byte-level truth)
 
