@@ -1,0 +1,30 @@
+<svg viewBox="0 0 1200 340" width="1200" height="340" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'DejaVu Sans', sans-serif" role="img">
+  <title>flow-tag — the open NFC tag that ships with Flow</title>
+  <desc>Dark banner with an orange app-icon tile showing the white scan-frame face logo, next to the flow-tag wordmark, tagline and flowworld.xyz link.</desc>
+
+  <!-- card -->
+  <rect x="8" y="8" width="1184" height="324" rx="22" fill="#1A1A1A" stroke="#333333"/>
+
+  <!-- logo tile -->
+  <rect x="80" y="80" width="180" height="180" rx="34" fill="#FF8C00"/>
+  <g transform="translate(80,80) scale(0.6)" fill="#ffffff">
+    <rect x="62" y="62" width="54" height="30"/>
+    <rect x="62" y="62" width="30" height="54"/>
+    <rect x="184" y="62" width="54" height="30"/>
+    <rect x="208" y="62" width="30" height="54"/>
+    <rect x="62" y="208" width="54" height="30"/>
+    <rect x="62" y="184" width="30" height="54"/>
+    <rect x="184" y="208" width="54" height="30"/>
+    <rect x="208" y="184" width="30" height="54"/>
+    <rect x="114" y="90" width="26" height="68"/>
+    <rect x="160" y="90" width="26" height="68"/>
+    <rect x="110" y="174" width="26" height="26"/>
+    <rect x="164" y="174" width="26" height="26"/>
+    <rect x="128" y="200" width="44" height="22"/>
+  </g>
+
+  <!-- wordmark + copy -->
+  <text x="320" y="172" font-size="82" font-weight="800" fill="#f2f2f2" letter-spacing="-1.5">flow<tspan fill="#FF8C00">-</tspan>tag</text>
+  <text x="323" y="214" font-size="26" fill="#9a9a9a">The open NFC tag that ships with Flow.</text>
+  <text x="323" y="260" font-family="ui-monospace, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="23" fill="#FF8C00" font-weight="700">&#8594; flowworld.xyz</text>
+</svg>

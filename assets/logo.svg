@@ -1,0 +1,19 @@
+<svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>flow-tag logo</title>
+  <rect width="300" height="300" rx="56" fill="#FF8C00"/>
+  <g fill="#ffffff">
+    <rect x="62" y="62" width="54" height="30"/>
+    <rect x="62" y="62" width="30" height="54"/>
+    <rect x="184" y="62" width="54" height="30"/>
+    <rect x="208" y="62" width="30" height="54"/>
+    <rect x="62" y="208" width="54" height="30"/>
+    <rect x="62" y="184" width="30" height="54"/>
+    <rect x="184" y="208" width="54" height="30"/>
+    <rect x="208" y="184" width="30" height="54"/>
+    <rect x="114" y="90" width="26" height="68"/>
+    <rect x="160" y="90" width="26" height="68"/>
+    <rect x="110" y="174" width="26" height="26"/>
+    <rect x="164" y="174" width="26" height="26"/>
+    <rect x="128" y="200" width="44" height="22"/>
+  </g>
+</svg>
