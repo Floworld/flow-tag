@@ -1,15 +1,15 @@
 <!-- flow-tag -->
 <p align="center">
-  <a href="https://flowworld.xyz"><img src="assets/banner.png" alt="flow-tag — the open NFC tag that ships with Flow" width="820"></a>
+  <a href="https://floworld.xyz"><img src="assets/banner.png" alt="flow-tag — the open NFC tag that ships with Flow" width="820"></a>
 </p>
 
 <p align="center">
-  <strong>A free, open-source NFC tag that ships in the box with <a href="https://flowworld.xyz">Flow</a>.</strong><br>
+  <strong>A free, open-source NFC tag that ships in the box with <a href="https://floworld.xyz">Flow</a>.</strong><br>
   Comes preloaded. Fully rewritable. No lock-in, no app, no account.
 </p>
 
 <p align="center">
-  <code>NTAG21x</code> &nbsp;·&nbsp; <code>NDEF</code> &nbsp;·&nbsp; <code>MIT</code> &nbsp;·&nbsp; <a href="https://flowworld.xyz"><strong>flowworld.xyz →</strong></a>
+  <code>NTAG21x</code> &nbsp;·&nbsp; <code>NDEF</code> &nbsp;·&nbsp; <code>MIT</code> &nbsp;·&nbsp; <a href="https://floworld.xyz"><strong>floworld.xyz →</strong></a>
 </p>
 
 ---
@@ -18,7 +18,7 @@
 
 It's a sticker with a chip in it. We put it in the Flow box for free.
 
-Out of the box it's preconfigured with a demo payload (the infamous **Kastanienhof ratings** — tap it and see). That's just a default so the thing does *something* the second you unwrap it. The point isn't the payload. The point is that **the tag is yours** — every byte on it is rewritable, the format is a documented open standard, and this repo hands you everything you need to turn it into whatever you want.
+Out of the box it's preconfigured with a demo payload — tap it and it just opens [floworld.xyz](https://floworld.xyz). That's only a default so the thing does *something* the second you unwrap it. The point isn't the payload. The point is that **the tag is yours** — every byte on it is rewritable, the format is a documented open standard, and this repo hands you everything you need to turn it into whatever you want.
 
 No proprietary encoding. No cloud dependency. No "sign in to configure." It's an NTAG21x chip speaking plain NDEF, the same standard your phone already knows. If you can tap it, you can rewrite it.
 
@@ -40,7 +40,7 @@ The tag arrives **flashed with a working default**. You do not have to do anythi
 ```
 ┌──────────────────────────────────────────────────┐
 │  SHIPPED STATE            →   YOUR STATE           │
-│  Kastanienhof demo URL     →   literally anything   │
+│  the floworld.xyz link     →   literally anything   │
 │  (read-only? no.)          →   (rewrite freely)     │
 └──────────────────────────────────────────────────┘
 ```
@@ -88,7 +88,7 @@ flow-tag/
 │   ├── wifi.md            ← join a network on tap
 │   ├── vcard.md           ← share contact details
 │   ├── flow-macro.md      ← trigger a Flow action
-│   └── kastanienhof.ndef  ← the shipped default, as a file
+│   └── default.ndef      ← the shipped default, as a file
 ├── hardware/
 │   └── README.md          ← chip specs, memory, sourcing
 ├── payloads/
@@ -107,7 +107,7 @@ flow-tag/
 
 **Is my data going to a server?** Nothing here phones home. A URL record just opens a browser; where *that* goes is on you.
 
-**Where do I get more tags?** Any NTAG213/215/216 sticker works. Or [buy another Flow](https://flowworld.xyz) and get one free — we're not subtle about it.
+**Where do I get more tags?** Any NTAG213/215/216 sticker works. Or [buy another Flow](https://floworld.xyz) and get one free — we're not subtle about it.
 
 ## Contributing
 
@@ -116,6 +116,6 @@ Got a clever payload or a platform guide we missed? PRs welcome. Keep examples c
 ---
 
 <p align="center">
-  Built by the people making <a href="https://flowworld.xyz"><strong>Flow</strong></a> — open hardware for people who like to open things.<br>
-  <a href="https://flowworld.xyz">flowworld.xyz</a>
+  Built by the people making <a href="https://floworld.xyz"><strong>Flow</strong></a> — open hardware for people who like to open things.<br>
+  <a href="https://floworld.xyz">floworld.xyz</a>
 </p>
