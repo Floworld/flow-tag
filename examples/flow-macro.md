@@ -1,6 +1,6 @@
 # Example: trigger a Flow macro
 
-This is the one that makes the tag more than a fancy QR code. A tap becomes an action on your machine — launch an app, run a script, flip lights, start a pomodoro — routed through your [Flow](https://flowworld.xyz) device.
+This is the one that makes the tag more than a fancy QR code. A tap becomes an action on your machine — launch an app, run a script, flip lights, start a pomodoro — routed through your [Flow](https://floworld.xyz) device.
 
 ## The idea
 
@@ -25,10 +25,10 @@ Write it: NFC Tools → **Add a record → Custom URL/URI** → `flow://macro/de
 
 ## Option B — external NDEF type (handler-driven)
 
-Cleaner if you own the handler end-to-end. Use TNF `0x4`, type `flowworld.xyz:macro`, payload = the macro id:
+Cleaner if you own the handler end-to-end. Use TNF `0x4`, type `floworld.xyz:macro`, payload = the macro id:
 
 ```
-Type:    flowworld.xyz:macro
+Type:    floworld.xyz:macro
 Payload: deep-work
 ```
 
@@ -51,4 +51,4 @@ Tap → phone opens the URL → Flow's endpoint runs the macro → returns 200. 
 - `leaving` → lock the machine, pause music, arm the camera
 - `demo` → launch the exact app + window layout for a screen-share
 
-The tag is dumb and cheap on purpose. Flow is where the logic lives. Build your macros at [flowworld.xyz](https://flowworld.xyz).
+The tag is dumb and cheap on purpose. Flow is where the logic lives. Build your macros at [floworld.xyz](https://floworld.xyz).

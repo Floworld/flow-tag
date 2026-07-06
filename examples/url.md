@@ -5,15 +5,15 @@ The simplest and most portable payload. Works on every phone, no app needed.
 ## App way (30 seconds)
 
 1. NFC Tools → **Write → Add a record → URL / URI**.
-2. Type your link, e.g. `https://flowworld.xyz`.
+2. Type your link, e.g. `https://floworld.xyz`.
 3. **Write**, hold to tag.
 
 ## Raw NDEF
 
-For `https://flowworld.xyz` (see [../docs/ndef-spec.md](../docs/ndef-spec.md) for the breakdown):
+For `https://floworld.xyz` (see [../docs/ndef-spec.md](../docs/ndef-spec.md) for the breakdown):
 
 ```
-03 11 D1 01 0E 55 04 66 6C 6F 77 77 6F 72 6C 64 2E 78 79 7A FE
+03 11 D1 01 0D 55 04 66 6C 6F 77 6F 72 6C 64 2E 78 79 7A FE
 ```
 
 ## Scripted (nfcpy)
@@ -21,7 +21,7 @@ For `https://flowworld.xyz` (see [../docs/ndef-spec.md](../docs/ndef-spec.md) fo
 ```python
 import nfc, ndef
 def w(tag):
-    tag.ndef.records = [ndef.UriRecord("https://flowworld.xyz")]
+    tag.ndef.records = [ndef.UriRecord("https://floworld.xyz")]
     return True
 nfc.ContactlessFrontend('usb').connect(rdwr={'on-connect': w})
 ```

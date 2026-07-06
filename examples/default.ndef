@@ -1,0 +1,23 @@
+# The shipped default, as a raw NDEF file.
+#
+# This is exactly what your flow-tag arrives flashed with: a single
+# Well-Known URI record pointing at floworld.xyz. It is NOT locked.
+# Overwrite it whenever you like; re-flash it from here to reset.
+#
+# Payload URL: https://floworld.xyz
+#
+# --- Hex dump (TLV-wrapped, ready to write to user memory page 4+) ---
+# 03 11 D1 01 0D 55 04 66 6C 6F 77 6F 72 6C 64 2E 78 79 7A FE
+#
+# Breakdown:
+#   03 11              TLV: NDEF message, 0x11 = 17 bytes
+#   D1                 record header  MB=1 ME=1 SR=1 TNF=1 (Well-Known)
+#   01                 type length = 1
+#   0D                 payload length = 0x0D = 13 (1 prefix + 12 URL chars)
+#   55                 type 'U' (URI)
+#   04                 URI prefix 0x04 = "https://"
+#   66 6C 6F 77 ...    "floworld.xyz" (ASCII)
+#   FE                 TLV terminator
+#
+# Reproduce with tools/write-tag.py:
+#   python3 tools/write-tag.py --url "https://floworld.xyz"

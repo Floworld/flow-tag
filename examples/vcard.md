@@ -10,8 +10,8 @@ VERSION:3.0
 FN:Ada Lovelace
 ORG:Flow
 TITLE:Firmware
-EMAIL:ada@flowworld.xyz
-URL:https://flowworld.xyz
+EMAIL:ada@floworld.xyz
+URL:https://floworld.xyz
 END:VCARD
 ```
 
